@@ -1,4 +1,4 @@
-package com.example.studentcard.records;
+package com.example.studentcard;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -1,4 +1,4 @@
-package com.example.studentcard.records;
+package com.example.studentcard;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,9 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
-import com.example.studentcard.Login_screen;import com.example.studentcard.MainActivity2;
-import com.example.studentcard.R;
 
 public class NewActivity extends AppCompatActivity {
     Button next;
@@ -26,7 +23,7 @@ public class NewActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 msg=text.getText().toString();
-                Intent intent = new Intent(Login_screen.NewActivity.this, Login_screen.ShowDetails.class);
+                Intent intent = new Intent(NewActivity.this, ShowDetails.class);
                 intent.putExtra("v1",msg);
                 startActivity(intent);
             }

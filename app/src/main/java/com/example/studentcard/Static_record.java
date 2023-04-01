@@ -1,16 +1,11 @@
-package com.example.studentcard.records;
+package com.example.studentcard;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
-
-import com.example.studentcard.Login_screen;import com.example.studentcard.MainActivity;
-import com.example.studentcard.MainActivity2;
-import com.example.studentcard.R;
 
 public class Static_record extends AppCompatActivity {
 
@@ -24,7 +19,7 @@ public class Static_record extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Login_screen.Static_record.this, Login_screen.NewActivity.class);
+                Intent intent = new Intent(Static_record.this, NewActivity.class);
                 startActivity(intent);
             }
         });

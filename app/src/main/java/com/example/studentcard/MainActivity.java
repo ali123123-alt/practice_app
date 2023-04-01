@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Spinner spinner;
     Locale locale;
     String currentLanguage = "en", currentLang;
-    Button gotoNext,calculator,webSearch,activity;
+    Button portfolio,calculator,webSearch,activity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,11 +60,11 @@ public class MainActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
-        gotoNext = findViewById(R.id.button);
-        gotoNext.setOnClickListener(new View.OnClickListener() {
+        portfolio = findViewById(R.id.button);
+        portfolio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                Intent intent = new Intent(MainActivity.this, Portfolio.class);
                 startActivity(intent);
             }
         });
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         calculator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+                Intent intent = new Intent(MainActivity.this, calculator.class);
                 startActivity(intent);
             }
         });
